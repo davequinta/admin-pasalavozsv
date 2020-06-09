@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer" app color="#263C4F">
       <v-list dense>
-        <v-list-item link to="/">
+        <v-list-item link to="/dashboard">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>

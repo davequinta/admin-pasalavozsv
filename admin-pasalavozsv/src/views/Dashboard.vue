@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer" app color="#263C4F">
       <v-list dense>
-        <v-list-item link to="/">
+        <v-list-item link to="/dashboard">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
@@ -43,70 +43,65 @@
       /></v-toolbar-title>
     </v-app-bar>
 
-    <v-content style="background-color:#363636">
+    <v-content style="background-color:#363636; ">
       <v-container fluid>
         <h1 style="margin-left:10%">Panel de control</h1>
 
-        <v-row align="center" justify="center">
-          <!--Acá va el contenido-->
-          <div style="padding:0% 5% 0% 5% ;">
-            <br />
-            <!--Card 1-->
-            <v-row>
-              <v-col cols="12" md="6"
-                ><v-card color="#006064" class="mx-auto" max-width="400">
-                  <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                  >
-                  </v-img>
-
-                  <v-card-title class="pb-0">Organizaciones</v-card-title>
-
-                  <v-card-text class="text--primary">
-                    <div>Listado</div>
-
-                    <div>Organizaciones de la plataforma</div>
-                  </v-card-text>
-
-                  <v-card-actions>
-                    <v-btn to="/join" color="orange" text>
-                      Agregar
-                    </v-btn>
-                    <v-btn to="/organizations" color="orange" text>
-                      Ver más
-                    </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-col>
-              <v-col cols="12" md="6">
-                <v-card class="mx-auto" color="#558B2F" max-width="400">
-                  <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://images.unsplash.com/photo-1461532257246-777de18cd58b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"
-                  >
-                  </v-img>
-
-                  <v-card-title class="pb-0">Solicitudes</v-card-title>
-
-                  <v-card-text class="text--primary">
-                    <div>Solicitudes de ayuda</div>
-
-                    <div>Datos recopilados del formulario en la página</div>
-                  </v-card-text>
-
-                  <v-card-actions>
-                    <v-btn to="/request" color="black" text>
-                      Ver más
-                    </v-btn>
-                  </v-card-actions>
-                </v-card></v-col
+        <!--Acá va el contenido-->
+        <!--Card 1-->
+        <v-row style="padding:0% 5% 0% 10% ;">
+          <v-col cols="12" md="3"
+            ><v-card color="#006064" class="mx-auto" max-width="400">
+              <v-img
+                class="white--text align-end"
+                height="200px"
+                src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
               >
-            </v-row>
-            <!--Card 2-->
-          </div>
+              </v-img>
+
+              <v-card-title class="pb-0">Organizaciones</v-card-title>
+
+              <v-card-text class="text--primary">
+                <div>Listado</div>
+
+                <div>Organizaciones de la plataforma</div>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-btn to="/join" color="orange" text>
+                  Agregar
+                </v-btn>
+                <v-btn to="/organizations" color="orange" text>
+                  Ver más
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" md="3">
+            <v-card color="#558B2F" class="mx-auto" max-width="400">
+              <v-img
+                class="white--text align-end"
+                height="200px"
+                src="https://images.unsplash.com/photo-1461532257246-777de18cd58b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"
+              >
+              </v-img>
+
+              <v-card-title class="pb-0">Solicitudes</v-card-title>
+
+              <v-card-text class="text--primary">
+                <div>Solicitudes de ayuda</div>
+
+                <div>Datos recopilados del formulario</div>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-btn to="/request" color="black" text>
+                  Ver más
+                </v-btn>
+              </v-card-actions>
+            </v-card></v-col
+          >
         </v-row>
       </v-container>
     </v-content>

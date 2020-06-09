@@ -34,18 +34,18 @@
       /></v-toolbar-title>
     </v-app-bar> -->
 
-    <v-content class="login-square">
+    <v-content style="padding:0% 10% 0% 10%" class="login-square">
       <v-container fluid>
         <v-row class="login-square" align="center" justify="center">
           <!--Acá va el contenido-->
           <div class="square">
-            <div class="text-center">
-              <img
-                align="center"
-                justify="center"
+            <div align="center" justify="center">
+              <v-img
+                width="70%"
+                height="50%"
                 src="../assets/pasalavoz.png"
-                alt
-              />
+                lazy-src=""
+              ></v-img>
             </div>
 
             <br /><br />
@@ -76,6 +76,7 @@
               <v-btn x-large color="#FFFFF" @click="login()">
                 Entrar
               </v-btn>
+              <br /><br />
             </div>
           </div>
         </v-row>
@@ -132,16 +133,19 @@ export default {
   color: #ff5a4d;
 }
 .login-square {
-  padding: 10% 5% 10% 5%;
+  padding: 0% 30% 0% 30%;
   background: #263c4f;
   background-repeat: repeat;
 }
 
 .square {
+  margin-top: 15%;
+
+  padding: 10%;
+
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 2px solid #ff5a4d;
-  padding: 2%;
 }
 </style>
