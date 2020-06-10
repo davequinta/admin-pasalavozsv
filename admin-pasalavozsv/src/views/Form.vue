@@ -553,6 +553,7 @@ export default {
           collection_type: this.collection,
           geolocation: [{ lat: 0, lng: 0 }],
           name: this.org_name,
+          review: false,
           description: this.org_desc,
           address: this.direction,
           accounts: [
