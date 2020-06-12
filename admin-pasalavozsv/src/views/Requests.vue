@@ -105,7 +105,7 @@ export default {
       { text: "Departamento/Municipios", value: "state" },
       { text: "Dirección", value: "address" },
       { text: "Nombre de representante", value: "name" },
-      { text: "Contacto", value: "conctact" },
+      { text: "Contacto", value: "contact" },
       { text: "Cantidad de personas", value: "peopleNumber" },
       { text: "N° Niños", value: "kids" },
       { text: "N° Adultos", value: "adults" },
